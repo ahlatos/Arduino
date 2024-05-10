@@ -1,0 +1,37 @@
+Let's make a simple traffic light application. We need 3 LEDs for this. You can connect Arduino pins as you wish. I connected it to pins 8,9 and 10. good luck
+
+/////////////////
+int  led=8;
+int  led1=9;
+int  led2=10;
+
+
+
+void setup() {
+  pinMode(led,OUTPUT);
+pinMode(led1,OUTPUT);
+pinMode(led2,OUTPUT);
+}
+
+void loop() {
+ digitalWrite(led,1);
+ delay(5000);
+  digitalWrite(led,0);
+   digitalWrite(led1,1);
+ delay(1000);
+  digitalWrite(led1,0);
+   digitalWrite(led2,1);
+ delay(6000);
+  digitalWrite(led2,0); 
+   digitalWrite(led1,1);
+ delay(1000);
+  digitalWrite(led1,0);
+   digitalWrite(led,1);
+ delay(1000);
+  digitalWrite(led,0);
+  
+
+}
+
+
+////////////////
